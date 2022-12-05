@@ -1,0 +1,33 @@
+.newsletter-footer__newsletter-wrapper {
+    display: flex;
+    gap: 12px;
+}
+.newsletter-footer__label-text {
+    text-transform: uppercase;
+    color: $color-text5;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+.newsletter-footer {
+    align-items: center;
+    flex-direction: column;
+
+    padding: 60px 40px;
+}
+.newsletter-footer__footer-input {
+    width: 358px;
+    height: 50px;
+    background-color: $background-color1;
+    outline: 0;
+    border: 1px solid $border-color5;
+    border-radius: 4px;
+    padding-left: 15px;
+}
+.newsletter-footer__label-footer {
+    white-space: nowrap;
+}

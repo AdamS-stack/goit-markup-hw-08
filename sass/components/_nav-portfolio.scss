@@ -1,0 +1,23 @@
+.main-portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.main-portfolio__nav {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: $background-color4;
+    color: $color-text2;
+    padding: 6px 22px;
+    border-radius: $border-radius;
+    transition: color $transition $transition-timing-function,
+        background-color $transition $transition-timing-function;
+    &:hover {
+        background-color: $color-text3;
+        color: $color-text5;
+        box-shadow: 0px 4px 4px 0px $color-shadow4;
+    }
+}

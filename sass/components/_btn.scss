@@ -1,0 +1,17 @@
+.btn {
+    background-color: $color-text3;
+    box-shadow: 0 4px 4px $color-shadow;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.06em;
+    color: $color-text5;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 10px 40px 10px 40px;
+    border: 0;
+}

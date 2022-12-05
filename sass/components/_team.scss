@@ -1,0 +1,51 @@
+.section-team {
+    display: flex;
+    justify-content: space-between;
+    background-color: $background-color4;
+}
+
+.team {
+    padding-top: 15px;
+    background-color: $background-color4;
+}
+
+.section-team__people {
+    box-shadow: 0 1px 3px $color-shadow1, 0 1px 1px $color-shadow2,
+        0 2px 1px $color-shadow3;
+    border-radius: 0 0 4px 4px;
+    background-color: $background-color;
+}
+
+.section-team__name {
+    height: 30px;
+    text-align: center;
+}
+.icon-list__social-icon {
+    width: 20px;
+    height: 20px;
+    transition: color $transition;
+}
+
+.icon-list__icon-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    fill: $color-text7;
+    background-color: $background-color;
+    border-radius: 50%;
+    transition: background-color $transition $transition-timing-function,
+        fill $transition $transition-timing-function;
+    &:hover {
+        background-color: $background-color6;
+        fill: $color-text5;
+    }
+}
+.icon-list {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 10px;
+}

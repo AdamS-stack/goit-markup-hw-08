@@ -1,0 +1,35 @@
+.headers-elements {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+.photos-list__photo {
+    position: relative;
+}
+.photos-list__text-photo {
+    position: absolute;
+    text-transform: uppercase;
+    background-color: $background-color8;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-text5;
+    height: 70px;
+    width: 370px;
+    z-index: 2;
+    bottom: 3px;
+    padding: 30px 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.photos-list {
+    display: flex;
+    gap: 30px;
+}

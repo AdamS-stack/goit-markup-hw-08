@@ -1,0 +1,11 @@
+.header {
+    border-bottom: 1px solid $border-color;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    background-color: $background-color;
+}

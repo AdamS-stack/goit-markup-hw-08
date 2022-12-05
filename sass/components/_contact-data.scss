@@ -1,0 +1,24 @@
+.contact-data {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact-data__link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    align-items: center;
+    color: $color-text1;
+    fill: $color-text1;
+    transition: color $transition $transition-timing-function,
+        fill $transition $transition-timing-function;
+    &:hover {
+        color: $color-text3;
+        fill: $color-text3;
+    }
+}
