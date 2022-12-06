@@ -1,11 +1,17 @@
 .header {
     border-bottom: 1px solid $border-color;
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
-}
-.header-elements {
-    display: flex;
-    justify-content: space-between;
     background-color: $background-color;
+}
+@media (min-width: $tablet) {
+    .header-elements {
+        display: flex;
+        justify-content: space-between;
+        background-color: $background-color;
+    }
+    .header {
+        height: 80px;
+    }
 }

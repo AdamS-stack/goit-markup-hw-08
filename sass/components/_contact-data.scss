@@ -1,24 +1,70 @@
-.contact-data {
+.contact-data-mobile {
     display: flex;
+    flex-direction: column-reverse;
+    margin-top: 100px;
     gap: 30px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
-
-.contact-data__link {
+.contact-data-mobile__link {
     text-decoration: none;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 5px;
-    align-items: center;
+    color: $color-text3;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+}
+.contact-data-mobile__link--color {
+    font-size: 24px;
     color: $color-text1;
-    fill: $color-text1;
-    transition: color $transition $transition-timing-function,
-        fill $transition $transition-timing-function;
-    &:hover {
-        color: $color-text3;
-        fill: $color-text3;
+    line-height: 1.16;
+}
+.contact-data-mobile__icon {
+    display: none;
+}
+.contact-data {
+    display: none;
+}
+@media (min-width: $tablet) {
+    .contact-data {
+        margin-block-end: 0;
+        margin-block-start: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact-data__link {
+        text-decoration: none;
+        color: $color-text1;
+        position: relative;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        transition: color $transition $transition-timing-function,
+            fill $transition $transition-timing-function;
+        &:hover {
+            color: $color-text3;
+            fill: $color-text3;
+        }
+    }
+    .contact-data__icon {
+        position: absolute;
+        left: -24px;
+        top: 5px;
+    }
+}
+@media (min-width: $desktop) {
+    .contact-data {
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+    }
+    .contact-data__link {
+        line-height: 1.14;
+    }
+    .contact-data__icon {
+        top: 2px;
+    }
+    .contact-data__icon--tel {
+        left: -19px;
     }
 }

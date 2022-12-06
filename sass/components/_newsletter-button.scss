@@ -1,31 +1,33 @@
-.button-newsletter {
-    width: 200px;
-    height: 50px;
-    background-color: $background-color6;
-    color: $color-text5;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    white-space: nowrap;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0 4px 4px $color-shadow;
-}
-.button-newsletter__button-text {
-    font-size: 16px;
-    line-height: 1.87;
+@media (min-width: $desktop) {
+    .button-newsletter {
+        width: 200px;
+        height: 50px;
+        background-color: $background-color6;
+        color: $color-text5;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        white-space: nowrap;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 4px 4px $color-shadow;
+    }
+    .button-newsletter__button-text {
+        font-size: 16px;
+        line-height: 1.87;
 
-    font-weight: 700;
-    letter-spacing: 0.06em;
+        font-weight: 700;
+        letter-spacing: 0.06em;
 
-    height: 30px;
-}
-.button-newsletter__icon-newsletter {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    right: 24px;
-    top: 14px;
+        height: 30px;
+    }
+    .button-newsletter__icon-newsletter {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 24px;
+        top: 14px;
+    }
 }
