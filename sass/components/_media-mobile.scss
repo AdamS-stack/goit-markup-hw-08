@@ -1,7 +1,7 @@
 .media-mobile {
     display: flex;
     gap: 10px;
-    max-width: 50px;
+    flex-wrap: wrap;
 }
 .media-mobile__element {
     text-decoration: none;
