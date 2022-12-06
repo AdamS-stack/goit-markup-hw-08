@@ -1,6 +1,7 @@
 .media-mobile {
     display: flex;
-    gap: 4px;
+    gap: 10px;
+    max-width: 200px;
 }
 .media-mobile__element {
     text-decoration: none;
