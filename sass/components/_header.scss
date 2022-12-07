@@ -5,11 +5,20 @@
     align-items: center;
     background-color: $background-color;
 }
+.header-element {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+}
 @media (min-width: $tablet) {
     .header-elements {
         display: flex;
         justify-content: space-between;
         background-color: $background-color;
+    }
+    .header-element {
+        align-items: center;
     }
     .header {
         height: 80px;

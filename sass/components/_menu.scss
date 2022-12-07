@@ -2,30 +2,26 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 100vw;
+    height: 100%;
     background-color: $background-color;
 }
 .nav {
     display: none;
 }
 
-.mobile-menu {
-    position: relative;
-}
 .none {
     display: none;
 }
 
-.mobile-menu__button {
+.hamburger-menu {
     background-color: $background-color;
     border: 0;
-    position: absolute;
-    right: 10px;
-    bottom: 16px;
+
     &:hover {
         fill: $color-text3;
     }
 }
+
 .mobile-btn__close {
     position: absolute;
     right: 0;
@@ -71,6 +67,9 @@
     .mobile-menu {
         display: none;
     }
+    .hamburger-menu {
+        display: none;
+    }
     .nav {
         display: flex;
     }
@@ -102,7 +101,7 @@
             content: "";
             position: absolute;
             background-color: $background-color6;
-            top: 45px;
+            top: 44px;
             height: 4px;
             width: 100%;
             left: 0;
@@ -111,7 +110,7 @@
     }
 }
 @media (min-width: $desktop) {
-    .mobile-menu__button {
+    .hamburger-menu {
         display: none;
     }
 }

@@ -16,10 +16,17 @@
     <body class="body">
         <header class="header">
             <div class="container header-elements">
-                <a href="#" class="web-studio"
-                    ><span class="web-studio__web-studio--blue">Web</span
-                    >Studio</a
-                >
+                <div class="header-element">
+                    <a href="#" class="web-studio"
+                        ><span class="web-studio__web-studio--blue">Web</span
+                        >Studio</a
+                    >
+                    <button class="hamburger-menu">
+                        <svg class="mobile-menu__icon" width="24" height="16">
+                            <use href="./images/icons.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
                 <nav class="nav">
                     <ul class="menu">
                         <li class="item">
@@ -73,14 +80,159 @@
                 </ul>
             </div>
         </header>
+        <main>
+            <div class="main-section main-background">
+                <section class="section">
+                    <div class="container">
+                        <h1 class="main-background__text">
+                            EFEKTYWNE ROZWIĄZANIA <br />
+                            DLA WASZEGO BIZNESU
+                        </h1>
+                        <button type="button " class="btn" data-modal-open>
+                            Zamów usługę
+                        </button>
+                        <div class="backdrop is-hidden" data-modal>
+                            <div class="backdrop__modal">
+                                <button
+                                    class="backdrop__close-btn"
+                                    data-modal-close
+                                >
+                                    <svg width="20" height="20">
+                                        <use
+                                            href="./images/icons.svg#icon-close"
+                                        ></use>
+                                    </svg>
+                                </button>
+                                <div class="wrapper-form">
+                                    <h6 class="wrapper-form__text">
+                                        Zostaw swoje dane w formularzu poniżej
+                                    </h6>
+                                    <form class="form">
+                                        <div class="input-wrapper">
+                                            <label class="input-wrapper__label">
+                                                <h5 class="input-wrapper__text">
+                                                    Imię
+                                                </h5>
 
+                                                <input
+                                                    class="input-wrapper__field"
+                                                    type="text"
+                                                    name="write your name"
+                                                    required
+                                                />
+                                                <svg
+                                                    class="input-wrapper__icon"
+                                                >
+                                                    <use
+                                                        href="./images/icons.svg#icon-user"
+                                                    ></use>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <label class="input-wrapper__label">
+                                                <h5 class="input-wrapper__text">
+                                                    Telefon
+                                                </h5>
+
+                                                <input
+                                                    class="input-wrapper__field"
+                                                    type="text"
+                                                    name="write your name"
+                                                    required
+                                                />
+                                                <svg
+                                                    class="input-wrapper__icon"
+                                                >
+                                                    <use
+                                                        href="./images/icons.svg#icon-phone"
+                                                    ></use>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <label class="input-wrapper__label">
+                                                <h5 class="input-wrapper__text">
+                                                    Email
+                                                </h5>
+
+                                                <input
+                                                    class="input-wrapper__field"
+                                                    type="text"
+                                                    name="write your name"
+                                                    required
+                                                />
+                                                <svg
+                                                    class="input-wrapper__icon"
+                                                >
+                                                    <use
+                                                        href="./images/icons.svg#icon-email"
+                                                    ></use>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <label class="input-wrapper__label">
+                                                <h5 class="input-wrapper__text">
+                                                    Komentarz
+                                                </h5>
+                                                <textarea
+                                                    class="input-wrapper__field--area"
+                                                    placeholder="Wprowadź tekst"
+                                                    name="write your comment"
+                                                    required
+                                                ></textarea>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <label
+                                                class="checkbox-wrapper__label"
+                                            >
+                                                <input
+                                                    type="checkbox"
+                                                    class="checkbox-wrapper__checkbox"
+                                                    name=" check the legal
+                                                regulations"
+                                                    required
+                                                />
+                                                <svg
+                                                    class="checkbox-wrapper__check"
+                                                >
+                                                    <use
+                                                        href="./images/icons.svg#icon-check"
+                                                    ></use>
+                                                </svg>
+                                            </label>
+                                            <p
+                                                class="checkbox-wrapper__legal-text"
+                                            >
+                                                Oświadczam, iż akceptuję
+                                                <a
+                                                    class="checkbox-wrapper__text-link"
+                                                    href="#"
+                                                    >regulamin</a
+                                                >
+
+                                                i
+                                                <a
+                                                    class="checkbox-wrapper__text-link"
+                                                    href="#"
+                                                    >politykę prywatności</a
+                                                >
+                                            </p>
+                                        </div>
+                                        <button type="submit" class="btn">
+                                            Wyślij
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
         <div class="mobile-menu">
-            <button class="mobile-menu__button">
-                <svg class="mobile-menu__icon" width="24" height="16">
-                    <use href="./images/icons.svg#icon-menu"></use>
-                </svg>
-            </button>
-
             <div class="mobile-btn none">
                 <button class="mobile-btn__close">
                     <svg class="mobile-btn__icon" width="24" height="24">

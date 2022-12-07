@@ -1,5 +1,5 @@
 let mobileClose = document.querySelector(".mobile-btn");
-let mobileBtnOpen = document.querySelector(".mobile-menu__button");
+let mobileBtnOpen = document.querySelector(".hamburger-menu");
 let mobileBtnClose = document.querySelector(".mobile-btn__close");
 
 mobileBtnOpen.addEventListener("click", (e) => {
