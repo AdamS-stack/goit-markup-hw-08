@@ -1,4 +1,15 @@
+.job {
+    display: none;
+}
+@media (min-width: $tablet) {
+    .job {
+        display: none;
+    }
+}
 @media (min-width: $desktop) {
+    .job {
+        display: block;
+    }
     .headers-elements {
         display: flex;
         justify-content: center;
@@ -33,5 +44,8 @@
     .photos-list {
         display: flex;
         gap: 30px;
+    }
+    .section {
+        margin-block: 94px;
     }
 }
