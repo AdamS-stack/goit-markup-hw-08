@@ -1,34 +1,59 @@
-@media (min-width: $desktop) {
-    .our-clients {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $background-color;
-    }
+.our-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-color;
+}
 
-    .icon-clients {
-        display: flex;
-        gap: 30px;
-    }
-    .icon-clients__logo {
-        width: 106px;
-        height: 60px;
-    }
+.icon-clients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 30px;
 
+    padding-bottom: 60px;
+    justify-content: center;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+.headers-elements {
+    font-size: 28px;
+    margin-block-end: 0;
+}
+.icon-clients__logo {
+    width: 106px;
+    height: 60px;
+}
+
+.icon-clients__customer-icon {
+    cursor: pointer;
+    border: 1px solid $border-color2;
+    display: flex;
+    padding: 16px 32px;
+    fill: $color-text7;
+    width: 210px;
+    justify-content: center;
+
+    border-radius: 4px;
+    transition: fill $transition $transition-timing-function,
+        border-color $transition $transition-timing-function;
+    &:hover {
+        border: 1px solid $border-color3;
+        fill: $color-text3;
+    }
+}
+@media (min-width: $tablet) {
     .icon-clients__customer-icon {
-        cursor: pointer;
-        border: 1px solid $border-color2;
-        display: flex;
-        padding: 16px 32px;
-        fill: $color-text7;
-
-        border-radius: 4px;
-        transition: fill $transition $transition-timing-function,
-            border-color $transition $transition-timing-function;
-        &:hover {
-            border: 1px solid $border-color3;
-            fill: $color-text3;
-        }
+        width: 228px;
+    }
+    .icon-clients {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+@media (min-width: $desktop) {
+    .icon-clients__customer-icon {
+        width: 170px;
     }
 }

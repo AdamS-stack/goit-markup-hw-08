@@ -83,7 +83,6 @@
 .checkbox-wrapper {
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 .checkbox-wrapper__legal-text {
@@ -96,12 +95,10 @@
     gap: 4px;
 
     letter-spacing: 0.03em;
-    position: relative;
 }
 .checkbox-wrapper__label {
     border: 1px solid $color-text2;
-    position: absolute;
-    left: -25px;
+
     width: 16px;
     height: 15px;
 
@@ -119,9 +116,7 @@
 .checkbox-wrapper__check {
     width: 16px;
     height: 15px;
-    position: absolute;
-    right: -1px;
-    top: -1px;
+
     fill: $color-text5;
     transition: background-color $transition $transition-timing-function;
 }
@@ -155,5 +150,9 @@
     }
     .input-wrapper__icon {
         right: 268px;
+    }
+    .checkbox-wrapper__legal-text {
+        display: flex;
+        justify-content: flex-start;
     }
 }
