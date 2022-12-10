@@ -14,7 +14,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .main-section {
-        background-image: url("../../images/main/mainmobile\ img@2x.jpg");
+        background-image: url("./../images/main/mainmobile\ img@2x.jpg");
     }
 }
 .main-background__text {
@@ -43,7 +43,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .main-section {
-            background-image: url("../../images/main/maintablet\ img@2x.jpg");
+            background-image: url("./../images/main/maintablet\ img@2x.jpg");
         }
     }
 }
