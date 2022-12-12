@@ -21,11 +21,16 @@
     flex-direction: column;
     gap: 1px;
     position: relative;
+    width: 90%;
 }
+
 .input-wrapper__label {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 
     &:has(.input-wrapper__field:focus) .input-wrapper__icon {
         fill: $color-text3;
@@ -43,7 +48,6 @@
 }
 
 .input-wrapper__field {
-    width: 70vw;
     height: 35px;
     border-radius: 4px;
     padding-left: 50px;
@@ -65,7 +69,6 @@
 
 .input-wrapper__field--area {
     height: 120px;
-    width: 70vw;
     resize: none;
     border: 1px solid $border-color6;
     padding-left: 15px;
@@ -83,20 +86,19 @@
 .checkbox-wrapper {
     display: flex;
     align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 14px;
 }
 
-.checkbox-wrapper__legal-text {
-    color: $color-text1;
-    font-size: 12px;
-    line-height: 1.16;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4px;
-
-    letter-spacing: 0.03em;
-}
 .checkbox-wrapper__label {
+    cursor: pointer;
+    transition: $border-color transition $transition-timing-function;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.checkbox-wrapper__label-form {
     border: 1px solid $color-text2;
 
     width: 16px;
@@ -109,13 +111,42 @@
 .checkbox-wrapper__checkbox {
     visibility: hidden;
     transition: background-color $transition $transition-timing-function;
-    &:checked + .checkbox-wrapper__check {
-        background-color: $background-color6;
-    }
+    width: 0;
+}
+.checkbox-wrapper__text {
+    display: flex;
+    justify-content: flex-start;
+    color: $color-text1;
+    font-size: 12px;
+    line-height: 1.16;
+
+    flex-wrap: wrap;
+    gap: 4px;
+
+    letter-spacing: 0.03em;
+}
+.checkbox-wrapper__text-link {
+    font-size: 12px;
+    color: $color-text1;
+    font-size: 12px;
+    line-height: 1.16;
+
+    flex-wrap: wrap;
+    gap: 4px;
+
+    letter-spacing: 0.03em;
+}
+.checkbox-wrapper__label:has(.checkbox-wrapper__checkbox:checked)
+    .checkbox-wrapper__check {
+    background-color: $background-color6;
+    color: $color-text5;
+    border-radius: 4px;
+    border: none;
 }
 .checkbox-wrapper__check {
-    width: 16px;
-    height: 15px;
+    border: 1px solid $color-text2;
+    border-radius: 2px;
+    display: flex;
 
     fill: $color-text5;
     transition: background-color $transition $transition-timing-function;
@@ -125,20 +156,21 @@
     color: $color-text3;
 }
 @media (min-width: $tablet) {
-    .input-wrapper__field--area {
-        width: 45vw;
+    .input-wrapper__label {
+        width: 100%;
     }
-    .input-wrapper__field {
-        width: 45vw;
-    }
-    .input-wrapper__icon {
-        right: 171px;
+    .checkbox-wrapper {
+        margin-left: o;
     }
 }
 
 @media (min-width: $desktop) {
     .input-wrapper__field--area {
         height: 138px;
+        width: 464px;
+    }
+    .input-wrapper__field {
+        width: 464px;
     }
 
     .checkbox-wrapper__legal-text {
@@ -154,5 +186,14 @@
     .checkbox-wrapper__legal-text {
         display: flex;
         justify-content: flex-start;
+    }
+    .checkbox-wrapper__text {
+        font-size: 14px;
+    }
+    .checkbox-wrapper__text-link {
+        font-size: 14px;
+    }
+    .checkbox-wrapper {
+        margin-left: 0;
     }
 }

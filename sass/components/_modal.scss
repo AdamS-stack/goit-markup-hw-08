@@ -48,6 +48,7 @@
 }
 @media (min-width: $desktop) {
     .backdrop__modal {
-        width: 680px;
+        width: 100%;
+        max-width: 528px;
     }
 }
