@@ -144,8 +144,7 @@
     fill: $color-text5;
     transition: background-color $transition $transition-timing-function;
 }
-.checkbox-wrapper__label:has(.checkbox-wrapper__checkbox:checked)
-    .checkbox-wrapper__check {
+.checkbox-wrapper__checkbox:checked + .checkbox-wrapper__check {
     background-color: $background-color6;
     border-radius: 4px;
     border: none;
