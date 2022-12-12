@@ -32,7 +32,6 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    top: 11px;
 
     background-color: $background-color;
     border: 1px solid $border-color4;
@@ -40,6 +39,8 @@
     width: 30px;
     height: 30px;
     right: 10px;
+    top: 11px;
+
     position: absolute;
 }
 @media (min-width: $tablet) {
