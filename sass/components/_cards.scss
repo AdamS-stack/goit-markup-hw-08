@@ -53,3 +53,8 @@
         }
     }
 }
+@media (min-width: $desktop) {
+    .see-portfolio {
+        justify-content: flex-start;
+    }
+}
