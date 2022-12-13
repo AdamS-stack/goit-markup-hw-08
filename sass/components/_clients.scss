@@ -51,6 +51,12 @@
         padding-top: 0;
         padding-bottom: 0;
     }
+    .headers-elements__modifications {
+        padding: 60px 0;
+    }
+    .section {
+        margin-block: 47px;
+    }
 }
 @media (min-width: $desktop) {
     .icon-clients__customer-icon {
