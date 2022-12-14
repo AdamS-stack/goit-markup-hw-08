@@ -37,7 +37,9 @@
 .see-portfolio__card {
     border: 1px solid $border-color1;
     margin-top: 20px;
-    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     transform: translateY(0);
 
     cursor: pointer;
@@ -55,6 +57,7 @@
 }
 @media (min-width: $desktop) {
     .see-portfolio {
-        justify-content: flex-start;
+        justify-content: center;
+        gap: 15px;
     }
 }
