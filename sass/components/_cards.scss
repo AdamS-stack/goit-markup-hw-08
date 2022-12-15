@@ -10,8 +10,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-block-start: 0;
 }
-
+.see-portfolio__text--strong {
+    margin-top: 20px;
+}
+.see-portfolio__text--narrow {
+    margin-block-end: 0;
+}
 .see-portfolio__photo {
     position: relative;
     overflow: hidden;
@@ -32,7 +38,8 @@
 
     height: 100%;
     width: 100%;
-    padding: 49px 24px;
+    display: flex;
+    align-items: center;
 }
 .see-portfolio__card {
     border: 1px solid $border-color1;
